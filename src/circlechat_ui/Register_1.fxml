@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="555.0" prefWidth="775.0" style="-fx-background-color: rgba(0,0,100,0);" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="circlechat_ui.RegisterController">
+    <children>
+      <ImageView fitHeight="200.0" fitWidth="186.0" layoutX="4.0" layoutY="388.0">
+         <image>
+            <Image url="@../Res/Asset%201.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="412.0" fitWidth="629.0" layoutX="146.0">
+         <image>
+            <Image url="@../Res/Asset%203.png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="372.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hi , My Name Is Circle">
+         <font>
+            <Font name="NexaLight" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="340.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Help me Know a bit about you">
+         <font>
+            <Font name="NexaLight" size="18.0" />
+         </font>
+      </Text>
+      <JFXTextField fx:id="first" focusColor="#40a899" labelFloat="true" layoutX="237.0" layoutY="99.0" prefHeight="25.0" prefWidth="186.0" promptText="First name" style="-fx-prompt-text-fill: #afafaf; -fx-text-fill: #ffffff;" unFocusColor="WHITE" />
+      <JFXTextField fx:id="last" focusColor="#40a899" labelFloat="true" layoutX="506.0" layoutY="99.0" prefHeight="25.0" prefWidth="186.0" promptText="Last Name" style="-fx-prompt-text-fill: #afafaf; -fx-text-fill: #ffffff;" unFocusColor="WHITE" />
+      <Text fill="#c3baba" layoutX="237.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" text="select your gender" wrappingWidth="151.79798889160156">
+         <font>
+            <Font name="NexaLight" size="16.0" />
+         </font>
+      </Text>
+      <JFXToggleButton layoutX="550.0" layoutY="148.0" text=" " toggleColor="#840094" toggleLineColor="#a578c2" unToggleColor="#1a76b9" unToggleLineColor="#72aaee" />
+      <Text fill="WHITE" layoutX="506.0" layoutY="181.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Male" wrappingWidth="43.79798889160156">
+         <font>
+            <Font name="NexaLight" size="14.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="616.0" layoutY="181.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Female" wrappingWidth="49.79798889160156">
+         <font>
+            <Font name="NexaLight" size="14.0" />
+         </font>
+      </Text>
+      <JFXTextField fx:id="username" focusColor="#40a899" labelFloat="true" layoutX="237.0" layoutY="221.0" prefHeight="25.0" prefWidth="186.0" promptText="Enter your new Username" style="-fx-prompt-text-fill: #afafaf; -fx-text-fill: #ffffff;" unFocusColor="WHITE" />
+      <JFXPasswordField fx:id="password" focusColor="#40a899" labelFloat="true" layoutX="506.0" layoutY="221.0" prefHeight="25.0" prefWidth="186.0" promptText="Enter your new Password" style="-fx-prompt-text-fill: #afafaf; -fx-text-fill: #ffffff;" unFocusColor="WHITE" />
+      <JFXButton layoutX="506.0" layoutY="340.0" onMousePressed="#inserting" prefHeight="48.0" prefWidth="134.0" style="-fx-background-radius: 50; -fx-background-color: #ffffff;" text="Register" textFill="#22a8b2">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="cancel" layoutX="289.0" layoutY="340.0" onMousePressed="#handleClose" prefHeight="48.0" prefWidth="134.0" style="-fx-background-radius: 50; -fx-background-color: #467c84;" text="Cancel" textFill="#f5f5f5">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+    </children>
+</AnchorPane>
