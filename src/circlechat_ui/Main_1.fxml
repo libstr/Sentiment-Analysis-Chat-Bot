@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.event.ActionEvent?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="circlechat_ui.MainController">
+   <children>
+      <Pane prefWidth="400.0">
+         <children>
+            <ImageView fitHeight="619.0" fitWidth="400.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Res/Chat%20back-01.png" />
+               </image>
+            </ImageView>
+            <JFXTextField fx:id="username" focusColor="#49cca5" layoutX="87.0" layoutY="314.0" prefHeight="46.0" prefWidth="244.0" promptText="Username" style="-fx-text-fill: #ffffff; -fx-prompt-text-fill: #ffffff;" unFocusColor="WHITE">
+               <font>
+                  <Font name="NexaLight" size="18.0" />
+               </font>
+            </JFXTextField>
+            <JFXPasswordField fx:id="password" focusColor="#48cca5" layoutX="90.0" layoutY="388.0" prefHeight="46.0" prefWidth="244.0" promptText="Password" style="-fx-text-fill: #ffffff; -fx-prompt-text-fill: #ffffff;" unFocusColor="WHITE">
+               <font>
+                  <Font name="NexaLight" size="18.0" />
+               </font>
+            </JFXPasswordField>
+            <Text fill="WHITE" layoutX="106.0" layoutY="570.0" strokeType="OUTSIDE" strokeWidth="0.0" text="New User?">
+               <font>
+                  <Font name="NexaLight" size="15.0" />
+               </font>
+            </Text>
+            <Text fill="#64e0ff" layoutX="191.0" layoutY="571.0" onMousePressed="#registerClicked" strokeType="OUTSIDE" strokeWidth="0.0" text="Register Now">
+               <font>
+                  <Font name="NexaLight" size="18.0" />
+               </font>
+            </Text>
+            <Label fx:id="label" layoutX="370.0" layoutY="14.0" onMouseClicked="#handleClose" text="X" textFill="WHITE">
+               <font>
+                  <Font name="NexaLight" size="24.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <JFXButton fx:id="b" blendMode="OVERLAY" layoutX="44.0" layoutY="446.0" onMousePressed="#Login" prefHeight="47.0" prefWidth="312.0" ripplerFill="#b11fde" style="-fx-background-color: #ffffff; -fx-background-radius: 20;" text="Log In" textAlignment="CENTER" textOverrun="CLIP">
+               <font>
+                  <Font name="NexaBold" size="22.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </JFXButton>
+            <Text fill="#64e0ff" layoutX="135.0" layoutY="518.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Forgot Password?">
+               <font>
+                  <Font name="NexaLight" size="15.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
